@@ -1,0 +1,13 @@
+server:
+  port: 9296
+
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/praddy18597/config-server
+          default-label: main
+          clone-on-start: true
